@@ -20,7 +20,7 @@ const capitalize = (str) => {
 };
 
 const getdata = (value) => {
-    let url = `http://api.weatherapi.com/v1/forecast.json?key=277f75598eb244809d660436243006&q=${value}&days=7&aqi=yes&alerts=yes`
+    let url = `https://api.weatherapi.com/v1/forecast.json?key=277f75598eb244809d660436243006&q=${value}&days=7&aqi=yes&alerts=yes`
   let fetchdata=  fetch(url)
         .then((response) => response.json())
         .then((result) => showdata(result))
